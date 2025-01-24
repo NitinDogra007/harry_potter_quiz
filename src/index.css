@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Quiz Display */
+
+.quiz-display {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Lato', serif;
+	text-align: center;
+}
+
+.quiz-container {
+	border: 1px solid black;
+	border-radius: 8px;
+	height: 400px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.results {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+/* Question Container */
+
+.question-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	padding: 30px;
+}
+
+.quiz-container p {
+	margin-top: 20px;
+}
+
+/* Buttons Option Styling */
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* Space between buttons */
+	margin: 20px 0; /* Add some spacing around the button group */
+}
+
+button {
+	border: solid 2px #000000; /* Green background */
+	color: #000000; /* White text */
+	border-radius: 8px; /* Rounded corners */
+	padding: 10px 20px; /* Add padding */
+	font-size: 1rem; /* Medium font size */
+	font-weight: bold; /* Bold text */
+	cursor: pointer; /* Pointer cursor on hover */
+	transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+	background-color: #5d65ff; /* Slightly darker green on hover */
+	transform: scale(1.05); /* Slight zoom effect */
+	color: white;
+}
+
+/* Restart Button */
+.restart {
+	background-color: blueviolet;
+	color: white;
+	border: 2px solid purple;
+	margin-top: 10px;
+}
+
+.correct {
+	color: green;
+	border-color: green;
+}
+
+.incorrect {
+	color: red;
+	border-color: red;
+}
+
+.restart:hover {
+	background-color: #5b0055; /* Slightly darker green on hover */
+	transform: scale(1.05); /* Slight zoom effect */
+	color: white;
+}
+
+.restart:active {
+	background-color: #260226; /* Even darker green when clicked */
+	transform: scale(0.95); /* Slight shrink effect on click */
+}
